@@ -1,0 +1,27 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<div class="pumpkin" onclick="@( () => Click() )"></div>
+</root>
+
+@code
+{
+	public static PlayerData Player { get; set; } = new();
+
+	protected override void OnStart()
+	{
+		Player = Player.Load();
+	}
+
+	public void Click()
+	{
+		Player.Score++;
+		Sound.Play( "sounds/click.sound" );
+		Player.Save();
+	}
+	
+	protected override int BuildHash() => System.HashCode.Combine( Player.Score );
+}

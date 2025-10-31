@@ -1,0 +1,38 @@
+Main
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ac692c;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+    pointer-events: all;
+  
+    .score
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 40px;
+      color: white;
+      font-size: 40px;
+    }
+
+	.pumpkin
+	{
+		background-image: url("sprites/pumpkin.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        image-rendering: pixelated;
+        aspect-ratio: 1;
+        width: 500px;
+      
+        &:active
+        {
+          transform: scale(0.9);
+        }
+	}
+}

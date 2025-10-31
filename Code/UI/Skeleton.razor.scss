@@ -1,0 +1,32 @@
+Skeleton
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-weight: bold;
+
+	.title
+	{
+        position: absolute;
+		font-size: 25px;
+        top: 500px;
+        left: 150px;
+		font-family: "Comic Sans MS";
+		color: white;
+	}
+  
+    .skeleton
+    {
+        position: absolute;
+        left: 0;
+        bottom: -800px;
+        width: 25%;
+        aspect-ratio: .5;
+        background-image: url("sprites/skeleton.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        image-rendering: pixelated;
+    }
+}

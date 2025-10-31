@@ -1,0 +1,17 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	@if ( Main.Player.Score > 100 )
+	{
+		<div class="skeleton"></div>
+		<div class="title">hey, thanks for playing my game dude</div>
+	}
+</root>
+
+@code
+{
+	//protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+}

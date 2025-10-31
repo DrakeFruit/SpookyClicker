@@ -1,0 +1,41 @@
+Buildings
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #444;
+	justify-content: flex-start;
+	align-items: center;
+    flex-direction: column;
+	font-weight: bold;
+    width: 20%;
+    height: 90%;
+    pointer-events: all;
+    gap: 5px;
+    padding-bottom: 125px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: #71380a solid 12px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 10px;
+
+    .hi
+    {
+      font-size: 50px;
+      color: white;
+    }
+  
+	.upgrade
+	{
+		font-size: 25px;
+		font-family: Poppins;
+		color: white;
+        background-color: gray;
+        border: white solid 2px;
+        border-radius: 2px;
+        width: 95%;
+        height: 100px;
+        flex-shrink: 0;
+	}
+}
