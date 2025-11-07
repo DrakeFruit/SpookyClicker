@@ -5,7 +5,7 @@
   "Ident": "spooky_clicker",
   "Schema": 1,
   "IncludeSourceFiles": false,
-  "Resources": null,
+  "Resources": "sprites/*",
   "PackageReferences": [],
   "EditorReferences": null,
   "Mounts": null,
